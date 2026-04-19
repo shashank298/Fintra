@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "SplitEase",
+    "slug": "splitease",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#6C63FF"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.splitease.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6C63FF"
+      },
+      "package": "com.splitease.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "SplitEase needs access to your photos to upload receipts.",
+          "cameraPermission": "SplitEase needs camera access to capture receipts."
+        }
+      ]
+    ],
+    "scheme": "splitease",
+    "extra": {
+      "API_BASE_URL": "https://yourapp.railway.app",
+      "TELEGRAM_BOT_USERNAME": "YourBotUsername"
+    }
+  }
+}
